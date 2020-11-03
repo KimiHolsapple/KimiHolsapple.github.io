@@ -101,13 +101,13 @@ body, html {
 }
 
 /* Images used */
-.profile { background-image: url("/Users/kimigrace/Documents/GitHub/KimiHolsapple.github.io/photos/IMG_7786.PNG"); }
-.bg-white { background-image: url("/Users/kimigrace/Desktop/Project Portfolio/website project/photos/Screen Shot 2020-11-03 at 2.17.25 PM.png");}
-.bg-la { background-image: url("/Users/kimigrace/Documents/GitHub/KimiHolsapple.github.io/photos/los angeles.jpg");}
-.bg-china { background-image: url("/Users/kimigrace/Documents/GitHub/KimiHolsapple.github.io/photos/china sunset.jpg");}
-.bg-sf { background-image: url("/Users/kimigrace/Documents/GitHub/KimiHolsapple.github.io/photos/golden-gate-bridge-2080228_1920.jpg");}
+.profile { background-image: url("photos/IMG_7786.PNG"); }
+.bg-white { background-image: url("photos/Screen Shot 2020-11-03 at 2.17.25 PM.png");}
+.bg-la { background-image: url("photos/los angeles.jpg");}
+.bg-china { background-image: url("photos/china sunset.jpg");}
+.bg-sf { background-image: url("photos/golden-gate-bridge-2080228_1920.jpg");}
 .bg-map { background-image: url("");}
-.bg-work { background-image: url("/Users/kimigrace/Documents/GitHub/KimiHolsapple.github.io/photos/startup.jpg");}
+.bg-work { background-image: url("photos/startup.jpg");}
 
 .profile_text {
     background-color: rgb(f,f,f); /* Fallback color */
