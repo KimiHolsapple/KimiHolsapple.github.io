@@ -161,16 +161,6 @@ body, html {
   margin-left: 100px;
 }
 
-
-
-/* Images used in About ME*/
-.profilePic { background-image: url("/Users/kimigrace/Desktop/Project Portfolio/website project/photos/KimiProfile1.JPG"); }
-.major-img { background-image: url("/Users/kimigrace/Desktop/Project Portfolio/website project/photos/china sunset.jpg"); }
-.ucsc-img { background-image: url("/Users/kimigrace/Desktop/Project Portfolio/website project/photos/Mchenry.jpg"); }
-.personality-img { background-image: url("/Users/kimigrace/Desktop/Project Portfolio/website project/photos/cup-of-coffee-1280537_1920.jpg"); }
-.LA-img { background-image: url("/Users/kimigrace/Desktop/Project Portfolio/website project/photos/los angeles.jpg"); }
-.connect-img { background-image: url("/Users/kimigrace/Desktop/Project Portfolio/website project/photos/startup.jpg"); }
-
 /* Text for each image*/
 
 .profilePic:hover {
