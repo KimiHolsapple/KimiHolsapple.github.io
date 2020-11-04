@@ -101,8 +101,8 @@ body, html {
 }
 
 /* Images used */
-.profile { background-image: url("photos/IMG_7786.PNG"); }
-.bg-white { background-image: url("");}
+.profile { background-image: url("https://github.com/KimiHolsapple/KimiHolsapple.github.io/blob/main/photos/IMG_7786.PNG"); }
+.bg-white { background-image: url("https://github.com/KimiHolsapple/KimiHolsapple.github.io/blob/main/photos/Screen%20Shot%202020-11-03%20at%202.17.25%20PM.png");}
 .bg-la { background-image: url("photos/los angeles.jpg");}
 .bg-china { background-image: url("photos/china sunset.jpg");}
 .bg-sf { background-image: url("photos/golden-gate-bridge-2080228_1920.jpg");}
