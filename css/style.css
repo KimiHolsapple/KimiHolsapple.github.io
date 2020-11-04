@@ -101,13 +101,13 @@ body, html {
 }
 
 /* Images used */
-.profile { background-image: url("IMG_7786.PNG"); }
-.bg-white { background-image: url("Screen%20Shot%202020-11-03%20at%202.17.25%20PM.png");}
-.bg-la { background-image: url("los angeles.jpg");}
-.bg-china { background-image: url("china sunset.jpg");}
-.bg-sf { background-image: url("golden-gate-bridge-2080228_1920.jpg");}
+.profile { background-image: url("https://KimiHolsapple.github.io/IMG_7786.PNG"); }
+.bg-white { background-image: url("https://KimiHolsapple.github.io/Screen%20Shot%202020-11-03%20at%202.17.25%20PM.png");}
+.bg-la { background-image: url("https://KimiHolsapple.github.io/los angeles.jpg");}
+.bg-china { background-image: url("https://KimiHolsapple.github.io/china sunset.jpg");}
+.bg-sf { background-image: url("https://KimiHolsapple.github.io/golden-gate-bridge-2080228_1920.jpg");}
 .bg-map { background-image: url("");}
-.bg-work { background-image: url("startup.jpg");}
+.bg-work { background-image: url("https://KimiHolsapple.github.io/startup.jpg");}
 
 .profile_text {
     background-color: rgb(f,f,f); /* Fallback color */
