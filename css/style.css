@@ -11,7 +11,7 @@
 
 .p-text-color {
   color:rgb(247, 247, 247);
-  font-size: 2vmax;
+  font-size: 1.5vmax;
 }
 
 .name-text {
@@ -52,7 +52,7 @@ h1 {
 
 /* Change the color of links on hover */
 .kimiNav-bar a:hover {
-  /* background-color: #65178487; */
+  /* background-color: #dbdbdb; */
   border-radius: 10px;
   color: rgb(150, 32, 235);
 }
@@ -60,7 +60,7 @@ h1 {
 /* Add an active class to highlight the current page */
 .kimiNav-bar a.active {
   background-color: #A9A9A9;
-  color: white;
+  color: rgb(150, 32, 235);
 }
 
 /* Hide the link that should open and close the topnav on small screens */
@@ -128,7 +128,7 @@ body, html {
 .bg-china { background-image: url("https://KimiHolsapple.github.io/photos/china sunset.jpg");}
 .bg-sf { background-image: url("https://KimiHolsapple.github.io/photos/golden-gate-bridge-2080228_1920.jpg");}
 .bg-map { background-image: url("");}
-.bg-work { background-image: url("https://KimiHolsapple.github.io/photos/startup.jpg");}
+.bg-work { background-image: url("photos/startup.jpg");}
 
 .name-degree-background {
   padding: 10%;
@@ -202,6 +202,26 @@ body, html {
   text-align: center;
 }
 
+.button {
+  background-color: #2a7ff6; 
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 8px;
+  margin: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: .7vmax;
+}
+
+.button :hover {
+  width: 100%;
+  height: 100%;
+  background-color: #39557c; 
+}
+
 /*Padding for Div*/
 /*Padding for Div*/
 /*Padding for Div*/
@@ -249,7 +269,7 @@ body, html {
 
 /* Hover Over Styling */
 
-.row {
+.row50 {
   display: flex;
 }
 
@@ -361,4 +381,81 @@ section .cards .text-card h3{
 .reveal.active{
   transform: translateY(0px);
   opacity: 1;
+}
+
+/* Portfolio */
+
+.portfolio-description {
+  padding: 5%;
+  margin: 2%;
+  border-radius: 10px;
+  vertical-align: middle;
+  width: 100%;
+  /* color:rgb(247, 247, 247); */
+  /* background-color: #6403d4; */
+  background-image: url("/photos/purple_galaxy.jpg");
+}
+
+.portfolio-bg {
+  display: flex;
+  background-color: #fff;
+  margin: 2%;
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px;
+  align-items: center;
+}
+
+.row {
+  /* margin: 3%; */
+  /* padding: 10px; */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+/* .row,
+.row >  .column {
+  padding: 8px;
+} */
+
+/* Create four equal columns that floats next to each other */
+ .column-img {
+  width: 30%;
+  float: left; 
+  padding: 3%;
+  /* margin: 20px; */
+}
+
+.column {
+  width: 100%;
+  /* margin: 20px; */
+}
+
+
+/* Clear floats after rows */
+ /* .row:after {
+  content: "";
+  display: table;
+  clear: both;
+} */
+
+/* Content */
+ .content {
+  background-color: white;
+  margin: 3%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+ .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  portfolio-bg .column {
+    width: 100%;
+  }
 }

@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Resume</title>
+<title>Portfolio</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -60,20 +60,62 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 
   <!-- Page content -->
 
-  <div class="bg-image-full bg-work "></div>
-
-    <div class="BigParagraph">
-      <h1> Project Work</h1>
-      <br>
-      <h2> Coming soon! </h2>
+  <div class="portfolio-description ">
+    <div class="name-text">
+      <h1 style="color:aliceblue"> Project Work</h1>
     </div>
 
+  
+
+    <!-- Portfolio Gallery Grid -->
+  <div class="portfolio-bg">
+    <div class="column">
+      <div class="row">
+        <div class="content">
+          <div class="column-img"> <img src="/photos/cnn_thumb.png" alt="CNN" style="width:100%;"></div>
+            <div class="column" > 
+              <h3>CNN for DeepFake detection</h3>
+              <div class="row"></div>
+                <div class="button"> <a target=”_blank” style="text-decoration:none;" href="cnn_project/index.html">Visit</a> </div>
+                <div class="button"> <a style="text-decoration:none;" href="https://github.com/KimiHolsapple/CNN-for-DeepFake-Viz">GitHub</a> </div>
+              </div>
+              <p>As DeepFakes become more and more prevelant it is critcal we develop and understand tools to help us 
+                determine reality from fiction. This project utilizes a pre-trained CNN called Meso-4 to create vizulizations to identify and detect
+                important factors that contribute to an image being "real" or "fake". Technologies used include Python libraries Keras/TensorFlow/matplotlib/PIL.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row portfolio-bg">
+        <div class="content">
+          <div class="column-img">  <img src="photos/app_microme.png" alt="MicroMe" style="width:100%; float: left;"> </div>
+          <h3>MicroMe Andriod/IOS App</h3>
+          <div class="button"> <a style="text-decoration:none;" href="https://github.com/115a-project/MicroMe">GitHub</a> </div>
+          <p>This is an Andriod/ios phone app that empowers users to keep track of important goals for mental health.</p>
+          <p>It allows the ability to track steps, water intake, and journal thoughts down and was made with Flutter/Dart and SqlFlite.</p>
+        </div>
+      </div>
+      <div class="row portfolio-bg">
+        <div class="content">
+          <img src="nature.jpg" alt="Nature" style="width:100%">
+          <h3>My Work</h3>
+          <p>Lorem ipsum..</p>
+        </div>
+      </div>
+    
+    </div>
+  </div>
+</div>
+<!-- END MAIN -->
 
 
 
 
   <!-- End page content -->
 </div>
+
+
 
 <!-- Newsletter Modal -->
 <!-- <div id="newsletter" class="w3-modal">
