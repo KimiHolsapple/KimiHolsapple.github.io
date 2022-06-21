@@ -1,16 +1,36 @@
+/* Whole Background used up */
+.back-container {
+  width: 100%;
+  color: 	#D3D3D3;
+}
+
+.p-text {
+  color: black;
+  font-size: 2vmax;
+}
+
+.p-text-color {
+  color:rgb(247, 247, 247);
+  font-size: 2vmax;
+}
+
+.name-text {
+  color: #2f2e2e;
+  font-weight: bold;
+}
+
+.second-text {
+  color: rgb(150, 32, 235);
+  font-size: 2em;
+}
+
 /* Add a black background color to the top navigation */
 h1 {
   color: black;
   font: Serif, Helvetica, Arial;
   font-size: 2.5em;
-
-
 }
 
-
-h2 {
-
-}
 
 
 /* -------- nav bar section ------------- */
@@ -32,8 +52,9 @@ h2 {
 
 /* Change the color of links on hover */
 .kimiNav-bar a:hover {
-  background-color: #dcdcdc;
-  color: black;
+  /* background-color: #65178487; */
+  border-radius: 10px;
+  color: rgb(150, 32, 235);
 }
 
 /* Add an active class to highlight the current page */
@@ -101,13 +122,42 @@ body, html {
 }
 
 /* Images used */
-.profile { background-image: url("https://KimiHolsapple.github.io/IMG_7786.PNG"); }
-.bg-white { background-image: url("https://KimiHolsapple.github.io/Screen%20Shot%202020-11-03%20at%202.17.25%20PM.png");}
-.bg-la { background-image: url("https://KimiHolsapple.github.io/los angeles.jpg");}
-.bg-china { background-image: url("https://KimiHolsapple.github.io/china sunset.jpg");}
-.bg-sf { background-image: url("https://KimiHolsapple.github.io/golden-gate-bridge-2080228_1920.jpg");}
+.profile { background-image: url("https://KimiHolsapple.github.io/photos/IMG_7786.PNG"); }
+.bg-white { background-image: url("https://KimiHolsapple.github.io/photos/Screen%20Shot%202020-11-03%20at%202.17.25%20PM.png");}
+.bg-la { background-image: url("https://KimiHolsapple.github.io/photos/los angeles.jpg");}
+.bg-china { background-image: url("https://KimiHolsapple.github.io/photos/china sunset.jpg");}
+.bg-sf { background-image: url("https://KimiHolsapple.github.io/photos/golden-gate-bridge-2080228_1920.jpg");}
 .bg-map { background-image: url("");}
-.bg-work { background-image: url("https://KimiHolsapple.github.io/startup.jpg");}
+.bg-work { background-image: url("https://KimiHolsapple.github.io/photos/startup.jpg");}
+
+.name-degree-background {
+  padding: 10%;
+  margin: 2%;
+  border-radius: 10px;
+  vertical-align: middle;
+  width: 100%;
+  background-color: #f3f3f3;
+}
+
+.quote-background {
+  padding: 10%;
+  margin: 2%;
+  border-radius: 10px;
+  vertical-align: middle;
+  width: 100%;
+  background-color: inherit;
+}
+
+.description-background {
+  padding: 10%;
+  margin: 2%;
+  border-radius: 10px;
+  vertical-align: middle;
+  width: 100%;
+  /* color:rgb(247, 247, 247); */
+  /* background-color: #6403d4; */
+  background-image: url("/photos/purple_lights.jpg");
+}
 
 .profile_text {
     background-color: rgb(f,f,f); /* Fallback color */
@@ -118,11 +168,23 @@ body, html {
     text-align: left;
     top: 20%;
     left: 0%;
-    right: 20%
+    right: 20%;
     bottom: 100%;
 
     z-index: 2;
 
+}
+
+.avatar {
+  vertical-align: middle;
+  background-color: rgb(247, 247, 247);
+  width: 300px;
+  height: auto;
+  border-radius: 50%;
+  background-image: url("photos/profile1.PNG");
+  border: 9px solid rgba(171, 78, 237, 0.89);
+  /* padding: 15px; */
+  float: right;
 }
 
 .profile_text_on {
@@ -193,7 +255,8 @@ body, html {
 
 .column50 {
   flex: 50%;
-  padding: 2px;
+  flex-wrap: wrap;
+  position: relative;
 }
 
 .container {
@@ -247,12 +310,55 @@ body, html {
 
 /*footer*/
 .footer {
-  position: relative;
-  top: 5em;
-  left: 1em;
-  bottom: 1em;
+  /* position: relative; */
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
   width: 100%;
-  background-color: #fff;
-  color: black;
+  background-color: rgb(48, 48, 48);
+  color: rgb(226, 222, 227);
   text-align: center;
+}
+
+/* Scroll reveal */
+
+section{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+section .cards .text-card{
+  background: #2696E9;
+  margin: 20px;
+  padding: 20px;
+}
+
+section .cards .text-card h3{
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+@media (width: auto){
+  section h1{
+    font-size: 40px;
+  }
+
+  section .cards{
+    flex-direction: column;
+  }
+}
+
+.reveal{
+  position: relative;
+  transform: translateY(80px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal.active{
+  transform: translateY(0px);
+  opacity: 1;
 }

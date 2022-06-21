@@ -1,59 +1,202 @@
+
+
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <title> Kimi Holsapple </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
-    <meta name="description" content="View Kimi Holsapple's portfolio">
-    <meta name="keywords" content="kimi, holsapple, software, programming, economics, UCSC, ucsc, santa cruz">
-    <meta name="keywords" content="portfolio, HTML5, CSS, intern, san francisco summer, chinese, japanese, california, los angeles">
+<html>
+<head>
+<title>Kimi Holsapple</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<style>
+.w3-sidebar a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+</style>
+</head>
+<body class="w3-content" style="max-width:1200px">
 
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+  <div class="w3-container w3-display-container w3-padding-16">
+    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+    <h3 class="w3-wide"><b>LOGO</b></h3>
+  </div>
+  <div class="kimiNav-bar" style="font-weight:bold">
+    <a href="index.html"> <h3> Home </h3> </a> 
+    <a href="resume.html"> <h3> General Resume </h3> </a>
+    <a href="portfolio.html" > <h3> Portfolio </h3> </a>
+    <a href="contactMe.html" > <h3> Contact Me </h3> </a> 
+    
+  </div>
+  <a href="#footer" class="w3-bar-item w3-button w3-padding">Contact</a> 
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('newsletter').style.display='block'">Newsletter</a> 
+  <a href="#footer"  class="w3-bar-item w3-button w3-padding">Subscribe</a>
+</nav>
 
-  </head>
-  <body>
-        <div class="kimiNav-bar">
-          <nav>
-            <ul>
-              <li> <a href="index.html"> <h3> Home </h3> </a> </li>
-              <li> <a href="AboutMe.html"> <h3> General Resume </h3> </a> </li>
-              <li> <a href="portfolio.html"> <h3> Portfolio </h3> </a> </li>
-              <li> <a href="skills.html"> <h3> Skills </h3> </a> </li>
-              <li> <a href="contactMe.html"> <h3> Contact Me </h3> </a> </li>
-            </ul>
-          </nav>
+<!-- Top menu on small screens -->
+<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+  <div class="w3-bar-item w3-padding-24 w3-wide">LOGO</div>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:30%">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+  <!-- Top header -->
+  <header class="w3-container w3-xlarge">
+    
+  </header>
+
+  <!-- Image header -->
+
+
+  <!-- Page content -->
+
+  <script type="text/javascript">
+    window.addEventListener('scroll', reveal);
+
+    function reveal(){
+      var reveals = document.querySelectorAll('.reveal');
+
+      for(var i = 0; i < reveals.length; i++){
+
+        var windowheight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 150;
+
+        if(revealtop < windowheight - revealpoint){
+          reveals[i].classList.add('active');
+        }
+        else{
+          reveals[i].classList.remove('active');
+        }
+      }
+    }
+    </script>
+
+  <section>
+  <div class="name-degree-background">
+    <img src="photos/profile1.PNG" alt="Avatar" class="avatar">
+
+    <h1 class="name-text"><b> Kimi Holsapple </b></h1>
+    <h2 class="second-text"> BA Computer Science BA Economics and Mathematics </h2>
+
+    <p class="p-text"> New Grad looking for Software Engineering positions </p>
+  
+    
+  </div>
+</section>
+<section>
+  <div class="container reveal">
+    <div class="quote-background">
+      <p class="p-text" > <i> "Any sufficently advanced technology is indistingushible from magic"</i></p>
+      <p class="p-text" style="text-align: right;">-- Arthur C. Clarke</p>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container reveal">
+    <div class="description-background">
+    <p class="p-text-color" > Perhaps the most infamous of Clarke's three laws, i've always been fascinated by the rapid
+      growth of technolgical advancements. As a someone passionate about machine learning and large scale computer systems, i've had the
+      privilege of experiencing this firsthand.
+      Growing up alongside the internet has shown me
+      the amazing oppurtunites and radical changes emerging technologies can effect on the world.
+      This technology and vision seem almost to be a part of Clark's described "magic", but if it weren't for such visionaries as Annie Easley and Elon Musk
+      they would have remained in the realm of the intangible.
+      Through role models such as these, i've cultivated a passion for technology and hope to help facilitate a better world alongside its impressive development. </p>
+
+    <p class="p-text-color" > This website was a fun side project that's pushed me to expand my programming skills, having fueled my passion
+      for computers and further enriched my studies. </p>
+
+    <p class="p-text-color"> Thank you for visiting, and feel free to check out my other tabs about my work. </p>
+  </div>
+  </div>
+</section>
+  
+  <!-- Footer -->
+    <div class="footer" > 
+      <h4 style="text-align: center;">Contact</h4>
+      <div class="row">
+        <div class="column50" style="font-size: 2.5vmax;"> <p><i class="fa fa-fw fa-map-marker"></i>    </p>
+        </div>
+        <div class="column50" style="font-size: 2.5vmax;"> <p><i class="fa fa-fw fa-phone"></i>   </p>
+        </div>
+        <div class="column50" style="font-size: 2.5vmax;"> <p><i class="fa fa-fw fa-envelope"></i> </p>
         </div>
 
-
-        <div class="bg-image profile "></div>
-        <div class="bg-image bg-white "></div>
-        <div class="profile_text">
-
-            <h1 class="BigParagraph"> Kimi Holsapple </h1>
-            <h2 class="BigParagraph"> University of California, Santa Cruz </h2>
-
-              <p class="paragraph" style="font-size:2vw;"> <i> "Any sufficently advanced technology is indistingushible from magic" -- Arthur C. Clarke</i></p>
-              <p class="paragraph" style="font-size:2vw;"> Perhaps the most infamous of Clarke's three laws, i've always been fascinated by the rapid
-                growth of technolgical advancements. As a third year studying economics and computer science related fields, i've had the
-                privilege of experiencing this firsthand.
-                Growing up alongside the internet has shown me
-                the amazing oppurtunites and radical changes emerging technologies can effect on the world.
-                This technology and vision seem almost to be a part of Clark's described "magic", but if it weren't for such visionaries as Annie Easley and Elon Musk
-                they would have remained in the realm of the intangible.
-                Through role models such as these, i've cultivated a passion for technology and hope to help facilitate a better world alongside its impressive development. </p>
-
-              <p class="paragraph"> This website was a fun side project that's pushed me to expand my programming skills, having fueled my passion
-                for computers and further enriched my studies. </p>
-
-              <p class="paragraph" > Thank you for visiting, and feel free to check out my other tabs about my work. </p>
+      </div>
+      <div class="row">
+        <div class="column50" style="font-size: 1.5vmax;"> <p> Bay Area    </p>
+        </div>
+        <div class="column50" style="font-size: 1.5vmax;"> <p> 310 621 9259   </p>
+        </div>
+        <div class="column50" style="font-size: 1.5vmax;"> <p> kimiholsapple@gmail.com</p>
         </div>
 
-        <br>
-        <br>
-        <br>
+      </div>
+          
+          <i class="fa fa-facebook-official w3-hover-opacity w3-large"></i>
+          <i class="fa fa-instagram w3-hover-opacity w3-large"></i>
+          <i class="fa fa-snapchat w3-hover-opacity w3-large"></i>
+          <i class="fa fa-pinterest-p w3-hover-opacity w3-large"></i>
+          <i class="fa fa-twitter w3-hover-opacity w3-large"></i>
+          <i class="fa fa-linkedin w3-hover-opacity w3-large"></i>
+
+    </div>
 
 
-        <footer class="footer"> Copyright &copy 2020, Kimi Holsapple </footer>
+  <!-- End page content -->
+</div>
 
-  </body>
+<!-- Newsletter Modal -->
+<!-- <div id="newsletter" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom" style="padding:32px">
+    <div class="w3-container w3-white w3-center">
+      <i onclick="document.getElementById('newsletter').style.display='none'" class="fa fa-remove w3-right w3-button w3-transparent w3-xxlarge"></i>
+      <h2 class="w3-wide">NEWSLETTER</h2>
+      <p>Join our mailing list to receive updates on new arrivals and special offers.</p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+      <button type="button" class="w3-button w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('newsletter').style.display='none'">Subscribe</button>
+    </div>
+  </div>
+</div> -->
+
+<script>
+// Accordion 
+function myAccFunc() {
+  var x = document.getElementById("demoAcc");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// Click on the "Jeans" link on page load to open the accordion for demo purposes
+document.getElementById("myBtn").click();
+
+
+// Open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
 </html>
