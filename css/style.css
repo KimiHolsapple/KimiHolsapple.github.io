@@ -178,7 +178,7 @@ body, html {
   margin: 2%;
   border-radius: 10px;
   vertical-align: middle;
-  width: 100%;
+  width: 95%;
   background-color: inherit;
 }
 
@@ -187,7 +187,7 @@ body, html {
   margin: 2%;
   border-radius: 10px;
   vertical-align: middle;
-  width: 100%;
+  width: 95%;
   /* color:rgb(247, 247, 247); */
   /* background-color: #6403d4; */
   background-image: url("/photos/purple_lights.jpg");
@@ -198,7 +198,7 @@ body, html {
   margin: 2%;
   border-radius: 10px;
   vertical-align: middle;
-  width: 100%;
+  width: 95%;
   /* color:rgb(247, 247, 247); */
   background-color: #f8f8f8;
   /* background-image: url("/photos/purple_lights.jpg"); */
@@ -212,17 +212,17 @@ body, html {
 
 .tech-stack-bg {
   padding: 10%;
-  margin: 2%;
+  margin-left: 2%;
   border-radius: 10px;
   vertical-align: middle;
-  width: 100%;
+  width: 95%;
   color:rgb(31, 31, 31);
   background-image: url("/photos/white_abstract.jpg");
 }
 
 .tech-stack-img-tiles {
   width: 30%;
-  margin: auto;
+  margin-left: 2%;
   border-radius: 10px;
 }
 
@@ -281,7 +281,7 @@ body, html {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: .7vmax;
+  font-size: 1vmax;
 }
 
 .button :hover {
@@ -395,10 +395,11 @@ body, html {
 /*footer*/
 .footer {
   /* position: relative; */
-  margin: 10px;
-  padding: 10px;
+  padding: 5%;
+  margin: 2%;
   border-radius: 10px;
-  width: 100%;
+  position: absolute;
+  width: 95%;
   background-color: rgb(48, 48, 48);
   color: rgb(226, 222, 227);
   text-align: center;
@@ -454,7 +455,7 @@ section .cards .text-card h3{
   margin: 2%;
   border-radius: 10px;
   vertical-align: middle;
-  width: 100%;
+  width: 95%;
   /* color:rgb(247, 247, 247); */
   /* background-color: #6403d4; */
   background-image: url("/photos/purple_galaxy.jpg");
@@ -467,7 +468,7 @@ section .cards .text-card h3{
   width: 100%;
   border-radius: 10px;
   padding: 10px;
-  align-items: center;
+  
 }
 
 .row {
@@ -493,28 +494,23 @@ section .cards .text-card h3{
 
 .column {
   width: 100%;
+  display: table;
+  margin: auto;
   /* margin: 20px; */
 }
 
 
 /* Clear floats after rows */
- /* .row:after {
+ .row:after {
   content: "";
   display: table;
   clear: both;
-} */
+}
 
 /* Content */
  .content {
   background-color: white;
   margin: 3%;
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 900px) {
- .column {
-    width: 50%;
-  }
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
@@ -531,7 +527,7 @@ section .cards .text-card h3{
   margin: 2%;
   border-radius: 10px;
   vertical-align: middle;
-  width: 100%;
+  width: 95%;
   background-image: url("/photos/white_abstract.jpg");
 }
 

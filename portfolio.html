@@ -16,72 +16,93 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 </style>
 <link rel="icon" type="image/x-icon" href="/photos/fav.png">
 </head>
-<body class="w3-content" style="max-width:1200px">
+<body class="w3-content" style="max-width:1200px;">
 
-<!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px;  margin-top: 50px;" id="mySidebar">
-  <div class="w3-container w3-display-container w3-padding-16">
-    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
-    <div class="row50">
-      <img src="photos/fav.png" width="30%"></img> 
-      <h5 style="margin:auto;">Kimi Holsapple</h5>
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px;  margin-top: 50px;" id="mySidebar">
+    <div class="w3-container w3-display-container w3-padding-16">
+      <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+      <div class="row50">
+        <img src="photos/fav.png" width="30%"></img> 
+        <h5 style="margin:auto;">Kimi Holsapple</h5>
+      </div>
     </div>
-  </div>
-  <div class="kimiNav-bar" style="font-weight:bold">
-    <a href="index.html"> <h3> Home </h3> </a> 
-    <a href="resume.html"> <h3> General Resume </h3> </a>
-    <a href="aboutme.html"> <h3> About Me </h3> </a>
-    <a href="portfolio.html" > <h3> Portfolio </h3> </a>
-    <a href="contactMe.html" > <h3> Contact Me </h3> </a> 
-    
-  </div>
-  <a href="#footer" class="w3-bar-item w3-button w3-padding">Contact</a> 
-  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('newsletter').style.display='block'">Newsletter</a> 
-  <a href="#footer"  class="w3-bar-item w3-button w3-padding">Subscribe</a>
-</nav>
-
-<!-- Top menu on small screens -->
-<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
-  <img src="photos/fav.png" width="8%" style="margin: 2%;"></img> 
-  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
-</header>
-
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-
-<!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:30%">
-
-  <!-- Push down content on small screens -->
-  <div class="w3-hide-large" style="margin-top:83px"></div>
+    <div class="kimiNav-bar" style="font-weight:bold">
+      <a href="index.html"> <h3> Home </h3> </a> 
+      <a href="resume.html"> <h3> General Resume </h3> </a>
+      <a href="aboutme.html"> <h3> About Me </h3> </a>
+      <a href="portfolio.html" > <h3> Portfolio </h3> </a>
+      <a href="contactMe.html" > <h3> Contact Me </h3> </a> 
+      
+    </div>
+  </nav>
   
-  <!-- Top header -->
-  <header class="w3-container w3-xlarge">
-    
+  <!-- Top menu on small screens -->
+  <header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+    <img src="photos/fav.png" width="8%" style="margin: 2%;"></img> 
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
   </header>
-
-  <!-- Image header -->
-
-
-  <!-- Page content -->
-
-  <div class="portfolio-description ">
-    <div class="name-text">
-      <h1 style="color:aliceblue"> Project Work</h1>
-    </div>
-
+  
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large " onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+  
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main" style="margin-left:30%; margin-top: 80px;">
+  
+    <!-- Push down content on small screens -->
+    <div class="w3-hide-large" style="margin-top:83px"></div>
+    
+    <!-- Top header -->
+    <header class="w3-container w3-xlarge">
+      
+    </header>
+  
+    <!-- Image header -->
+  
+  
+    <!-- Page content -->
+  
+    <script type="text/javascript">
+      window.addEventListener('scroll', reveal);
+  
+      function reveal(){
+        var reveals = document.querySelectorAll('.reveal');
+  
+        for(var i = 0; i < reveals.length; i++){
+  
+          var windowheight = window.innerHeight;
+          var windowwidth = window.innerWidth;
+          var revealtop = reveals[i].getBoundingClientRect().top;
+          var revealpoint = 150;
+  
+          if(revealtop < windowheight - revealpoint){
+            reveals[i].classList.add('active');
+            console.log(windowwidth, windowheight);
+          }
+          else{
+            reveals[i].classList.remove('active');
+          }
+        }
+      }
+      </script>
   
 
-    <!-- Portfolio Gallery Grid -->
-  <div class="portfolio-bg">
-    <div class="column">
+    <div class="portfolio-description ">
+      <div class="name-text">
+        <h1 style="color:aliceblue"> Project Work</h1>
+      </div>
 
-      <div class="row">
-        <div class="content">
-          <div class="column-img"> <img src="/photos/cnn_thumb.png" alt="CNN" style="width:100%;"></div>
-            <div class="column" > 
+    
+
+      <!-- Portfolio Gallery Grid -->
+      <div class="portfolio-bg">
+        <div class="column">
+
+          <div class="row ">
+            <div class="content">
+              <div class="column-img">  <img src="photos/cnn_thumb.png" alt="CNN" style="width:100%; float: left;"> </div>
               <h3>CNN for DeepFake detection</h3>
-              <div class="row"></div>
+              <div class="row">
                 <div class="button"> <a target=”_blank” style="text-decoration:none;" href="projects/cnn_project/index.html">Visit</a> </div>
                 <div class="button"> <a style="text-decoration:none;" href="https://github.com/KimiHolsapple/CNN-for-DeepFake-Viz">GitHub</a> </div>
               </div>
@@ -91,99 +112,54 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
               </p>
             </div>
           </div>
-        </div>
-      </div>
 
-      <div class="row portfolio-bg">
-        <div class="content">
-          <div class="column-img">  <img src="photos/app_microme.png" alt="MicroMe" style="width:100%; float: left;"> </div>
-          <h3>MicroMe Andriod/IOS App</h3>
           <div class="row">
-            <div class="button"> <a style="text-decoration:none;" href="projects/microme.html">Visit</a> </div>
-            <div class="button"> <a style="text-decoration:none;" href="https://github.com/115a-project/MicroMe">GitHub</a> </div>
+            <div class="content">
+              <div class="column-img">  <img src="photos/app_microme.png" alt="MicroMe" style="width:100%; float: left;"> </div>
+              <h3>MicroMe Andriod/IOS App</h3>
+              <div class="row">
+                <div class="button"> <a style="text-decoration:none;" href="projects/microme.html">Visit</a> </div>
+                <div class="button"> <a style="text-decoration:none;" href="https://github.com/115a-project/MicroMe">GitHub</a> </div>
+              </div>
+              <p>This is an Andriod/ios phone app that empowers users to keep track of important goals for mental health.</p>
+              <p>It allows the ability to track steps, water intake, and journal thoughts down and was made with Flutter/Dart and SqlFlite.</p>
+            </div>
           </div>
-          <p>This is an Andriod/ios phone app that empowers users to keep track of important goals for mental health.</p>
-          <p>It allows the ability to track steps, water intake, and journal thoughts down and was made with Flutter/Dart and SqlFlite.</p>
-        </div>
-      </div>
 
-      <div class="row portfolio-bg">
-        <div class="content">
-          <div class="column-img">  <img src="photos/swash_thumb.png" alt="Prog1" style="width:100%; float: left;"> </div>
-          <h3>Coastal Erosion Analysis in Python</h3>
           <div class="row">
-            <div class="button"> <a style="text-decoration:none;" href="projects/swash_zone/prog1.html">Visit</a> </div>
-            <div class="button"> <a style="text-decoration:none;" href="https://github.com/KimiHolsapple/Swash-zone-analyis">GitHub</a> </div>
+            <div class="content">
+              <div class="column-img">  <img src="photos/swash_thumb.png" alt="Prog1" style="width:100%; float: left;"> </div>
+              <h3>Coastal Erosion Analysis in Python</h3>
+              <div class="row">
+                <div class="button"> <a style="text-decoration:none;" href="projects/swash_zone/prog1.html">Visit</a> </div>
+                <div class="button"> <a style="text-decoration:none;" href="https://github.com/KimiHolsapple/Swash-zone-analyis">GitHub</a> </div>
+              </div>
+              <p> Using OpenCV ... </p>
+            </div>
           </div>
-          <p> Using OpenCV ... </p>
-        </div>
-      </div>
 
-      <div class="row portfolio-bg">
-        <div class="content">
-          <div class="column-img">  <img src="photos/2d_retire.png" alt="Prog2" style="width:100%; float: left;"> </div>
-          <h3> D3 Retirement Analysis Javascript </h3>
           <div class="row">
-            <div class="button"> <a style="text-decoration:none;" href="projects/retirement/prog2.html">Visit</a> </div>
-            <div class="button"> <a style="text-decoration:none;" href="https://github.com/KimiHolsapple/Retirement-Vis">GitHub</a> </div>
+            <div class="content">
+              <div class="column-img">  <img src="photos/2d_retire.png" alt="Prog2" style="width:100%; float: left;"> </div>
+              <h3> D3 Retirement Analysis Javascript </h3>
+              <div class="row">
+                <div class="button"> <a style="text-decoration:none;" href="projects/retirement/prog2.html">Visit</a> </div>
+                <div class="button"> <a style="text-decoration:none;" href="https://github.com/KimiHolsapple/Retirement-Vis">GitHub</a> </div>
+              </div>
+              <p>  </p>
+            </div>
           </div>
-          <p>  </p>
-        </div>
-      </div>
-    
-    </div>
-  </div>
-
-  <!-- Footer -->
-  <div class="footer" > 
-    <h4 style="text-align: center;">Contact</h4>
-    <div class="row50">
-      <div class="column50" style="font-size: 2.5vmax;"> <p><i class="fa fa-fw fa-map-marker"></i>    </p>
-      </div>
-      <div class="column50" style="font-size: 2.5vmax;"> <p><i class="fa fa-fw fa-phone"></i>   </p>
-      </div>
-      <div class="column50" style="font-size: 2.5vmax;"> <p><i class="fa fa-fw fa-envelope"></i> </p>
-      </div>
-
-    </div>
-    <div class="row50">
-      <div class="column50" style="font-size: 1.7vmax;"> <p> Bay Area    </p>
-      </div>
-      <div class="column50" style="font-size: 1.7vmax;"> <p> 310 621 9259   </p>
-      </div>
-      <div class="column50" style="font-size: 1.7vmax;"> <p> kimiholsapple@gmail.com</p>
-      </div>
-
-    </div>
         
-        <i class="fa fa-facebook-official w3-hover-opacity w3-large"></i>
-        <i class="fa fa-instagram w3-hover-opacity w3-large"></i>
-        <i class="fa fa-snapchat w3-hover-opacity w3-large"></i>
-        <i class="fa fa-pinterest-p w3-hover-opacity w3-large"></i>
-        <i class="fa fa-twitter w3-hover-opacity w3-large"></i>
-        <i class="fa fa-linkedin w3-hover-opacity w3-large"></i>
+        </div>
+
+      </div>
+      <!-- portflio -->
+    </div> 
 
   </div>
 
   
 </div>
-
-
-
-
-
-<!-- Newsletter Modal -->
-<!-- <div id="newsletter" class="w3-modal">
-  <div class="w3-modal-content w3-animate-zoom" style="padding:32px">
-    <div class="w3-container w3-white w3-center">
-      <i onclick="document.getElementById('newsletter').style.display='none'" class="fa fa-remove w3-right w3-button w3-transparent w3-xxlarge"></i>
-      <h2 class="w3-wide">NEWSLETTER</h2>
-      <p>Join our mailing list to receive updates on new arrivals and special offers.</p>
-      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
-      <button type="button" class="w3-button w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('newsletter').style.display='none'">Subscribe</button>
-    </div>
-  </div>
-</div> -->
 
 <script>
 // Accordion 
