@@ -222,7 +222,7 @@ body, html {
 
 .tech-stack-img-tiles {
   width: 30%;
-  margin-left: 2%;
+  margin: auto;
   border-radius: 10px;
 }
 
@@ -339,6 +339,7 @@ body, html {
 
 .row50 {
   display: flex;
+  margin: auto;
 }
 
 .column50 {
@@ -398,7 +399,6 @@ body, html {
   padding: 5%;
   margin: 2%;
   border-radius: 10px;
-  position: absolute;
   width: 95%;
   background-color: rgb(48, 48, 48);
   color: rgb(226, 222, 227);
@@ -472,7 +472,7 @@ section .cards .text-card h3{
 }
 
 .row {
-  /* margin: 3%; */
+  margin: auto;
   /* padding: 10px; */
   display: flex;
   flex-wrap: wrap;
