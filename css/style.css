@@ -1,0 +1,577 @@
+/* Whole Background used up */
+.back-container {
+  width: 100%;
+  color: 	#D3D3D3;
+}
+
+.p-text {
+  color: black;
+  font-size: 2vmax;
+}
+
+.p-text-color {
+  color:rgb(247, 247, 247);
+  font-size: 2vmax;
+}
+
+.name-text {
+  color: #2f2e2e;
+  font-weight: bold;
+}
+
+.second-text {
+  color: rgb(150, 32, 235);
+  font-size: 2em;
+}
+
+/* Add a black background color to the top navigation */
+h1 {
+  color: black;
+  font: Serif, Helvetica, Arial;
+  font-size: 2.5em;
+}
+
+
+
+/* -------- nav bar section ------------- */
+.kimiNav-bar {
+  background-color: #FFF;
+  overflow: hidden;
+  z-index: 5;
+}
+
+/* Style the links inside the navigation bar */
+.kimiNav-bar a {
+  float: left;
+  display: block;
+  color: #333;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.kimiNav-bar a:hover {
+  /* background-color: #dbdbdb; */
+  border-radius: 10px;
+  color: rgb(150, 32, 235);
+}
+
+/* Add an active class to highlight the current page */
+.kimiNav-bar a.active {
+  background-color: #A9A9A9;
+  color: rgb(150, 32, 235);
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.kimiNav-bar .icon {
+  display: none;
+}
+
+/* Make the bullet points dissapear */
+.kimiNav-bar ul {
+  list-style: none;
+}
+
+
+/* ABOUT ME PAGE THIS IS FOR the image backgrounds and text interface*/
+.scroll-img {
+  /* Full height */
+  height: 100%;
+
+/* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+/* HOME SCREEN PROFILE PICTURE SCROLL SMOOTH */
+.bg-image {
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 40%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-right: 20px;
+  margin-left: 100px;
+}
+
+.bg-image-full {
+  /* Full height */
+  height: 60%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Images used */
+.profile { background-image: url("https://KimiHolsapple.github.io/photos/IMG_7786.PNG"); }
+.bg-white { background-image: url("https://KimiHolsapple.github.io/photos/Screen%20Shot%202020-11-03%20at%202.17.25%20PM.png");}
+.bg-la { background-image: url("https://KimiHolsapple.github.io/photos/los angeles.jpg");}
+.bg-china { background-image: url("https://KimiHolsapple.github.io/photos/china sunset.jpg");}
+.bg-sf { background-image: url("https://KimiHolsapple.github.io/photos/golden-gate-bridge-2080228_1920.jpg");}
+.bg-map { background-image: url("");}
+.bg-work { background-image: url("photos/startup.jpg");}
+
+.name-degree-background {
+  padding: 10%;
+  margin: 2%;
+  border-radius: 10px;
+  vertical-align: middle;
+  width: 100%;
+  background-color: #f3f3f3;
+}
+
+.full-body-background {
+  background-image: url("/photos/black_abstract.jpg");
+  padding: 10%;
+  width: 100%;
+  z-index: 100;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position:relative;
+}
+  /**<a href='https://www.freepik.com/photos/technology-wave'>Technology wave photo created by rawpixel.com - www.freepik.com</a>**/
+
+.scroll-down-button {
+  position:fixed;
+  left: 50%;
+  bottom: 15px;
+  color:#ffffffc6;
+  font-size: x-large;
+  vertical-align: middle;
+  background-color: rgb(0, 0, 0);
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.full-body-background-card {
+  vertical-align: middle;
+  width: 100%;
+  padding: 10%;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.665);
+}
+
+.quote-background {
+  padding: 10%;
+  margin: 2%;
+  border-radius: 10px;
+  vertical-align: middle;
+  width: 100%;
+  background-color: inherit;
+}
+
+.description-background {
+  padding: 10%;
+  margin: 2%;
+  border-radius: 10px;
+  vertical-align: middle;
+  width: 100%;
+  /* color:rgb(247, 247, 247); */
+  /* background-color: #6403d4; */
+  background-image: url("/photos/purple_lights.jpg");
+}
+
+.tiles-bg {
+  padding: 10%;
+  margin: 2%;
+  border-radius: 10px;
+  vertical-align: middle;
+  width: 100%;
+  /* color:rgb(247, 247, 247); */
+  background-color: #f8f8f8;
+  /* background-image: url("/photos/purple_lights.jpg"); */
+}
+
+.img-tiles {
+  width: 100%;
+  border-radius: 10px;
+  padding: 4%;
+}
+
+.tech-stack-bg {
+  padding: 10%;
+  margin: 2%;
+  border-radius: 10px;
+  vertical-align: middle;
+  width: 100%;
+  color:rgb(31, 31, 31);
+  background-image: url("/photos/white_abstract.jpg");
+}
+
+.tech-stack-img-tiles {
+  width: 30%;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.profile_text {
+    background-color: rgb(f,f,f); /* Fallback color */
+
+    color: #222;
+    font-size: inherit;
+    position: absolute;
+    text-align: left;
+    top: 20%;
+    left: 0%;
+    right: 20%;
+    bottom: 100%;
+
+    z-index: 2;
+
+}
+
+.avatar {
+  vertical-align: middle;
+  background-color: rgb(247, 247, 247);
+  width: 40%;
+  height: auto;
+
+  border-radius: 50%;
+  background-image: url("photos/profile1.PNG");
+  border: 9px solid rgba(171, 78, 237, 0.89);
+  /* padding: 15px; */
+  float: right;
+}
+
+.profile_text_on {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(255,255,255,0.9); /* Black w/opacity/see-through */
+  color: black;
+  font-size: inherit;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 40em;
+  padding: 20px;
+  text-align: center;
+}
+
+.button {
+  background-color: #2a7ff6; 
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 8px;
+  margin: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: .7vmax;
+}
+
+.button :hover {
+  width: 100%;
+  height: 100%;
+  background-color: #39557c; 
+}
+
+/*Padding for Div*/
+/*Padding for Div*/
+/*Padding for Div*/
+.paragraph {
+  text-align: left;
+
+  margin-top: 50px;
+  margin-bottom: 10px;
+  margin-right: 450px;
+  margin-left: 100px;
+}
+
+.BigParagraph {
+  text-align: left;
+
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+/* Text for each image*/
+
+.profilePic:hover {
+  transform: scale(0.5) translate(-100%, -100%);
+}
+
+.scrollText {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  font-size: 80px;
+  border: 10px solid #f1f1f1;
+  position: fixed; /* Stay fixed */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+}
+
+
+/* Hover Over Styling */
+
+.row50 {
+  display: flex;
+}
+
+.column50 {
+  flex: 50%;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.container {
+  position: relative;
+}
+
+.image {
+  display: inline;
+  width: 70%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 70%;
+  opacity: 0;
+  transition: .8s ease;
+  background-color: #A9A9A9;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* black and white */
+.blackandwhite {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+/*footer*/
+.footer {
+  /* position: relative; */
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  width: 100%;
+  background-color: rgb(48, 48, 48);
+  color: rgb(226, 222, 227);
+  text-align: center;
+}
+
+/* Scroll reveal */
+
+section{
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+}
+
+section .cards .text-card{
+  background: #2696E9;
+  margin: 20px;
+  padding: 20px;
+}
+
+section .cards .text-card h3{
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+@media (width: auto){
+  section h1{
+    font-size: 40px;
+  }
+
+  section .cards{
+    flex-direction: column;
+  }
+}
+
+.reveal{
+  position: relative;
+  transform: translateY(80px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal.active{
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+/* Portfolio */
+
+.portfolio-description {
+  padding: 5%;
+  margin: 2%;
+  border-radius: 10px;
+  vertical-align: middle;
+  width: 100%;
+  /* color:rgb(247, 247, 247); */
+  /* background-color: #6403d4; */
+  background-image: url("/photos/purple_galaxy.jpg");
+}
+
+.portfolio-bg {
+  display: flex;
+  background-color: #fff;
+  margin: 2%;
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px;
+  align-items: center;
+}
+
+.row {
+  /* margin: 3%; */
+  /* padding: 10px; */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+/* .row,
+.row >  .column {
+  padding: 8px;
+} */
+
+/* Create four equal columns that floats next to each other */
+ .column-img {
+  width: 30%;
+  float: left; 
+  padding: 3%;
+  /* margin: 20px; */
+}
+
+.column {
+  width: 100%;
+  /* margin: 20px; */
+}
+
+
+/* Clear floats after rows */
+ /* .row:after {
+  content: "";
+  display: table;
+  clear: both;
+} */
+
+/* Content */
+ .content {
+  background-color: white;
+  margin: 3%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+ .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  portfolio-bg .column {
+    width: 100%;
+  }
+}
+
+/* Slide Show Styling https://stackoverflow.com/questions/48546962/building-a-responsive-slider-with-flex-css-and-javascript */
+
+.slider-background {
+  padding: 5%;
+  margin: 2%;
+  border-radius: 10px;
+  vertical-align: middle;
+  width: 100%;
+  background-image: url("/photos/white_abstract.jpg");
+}
+
+.dj-slider {
+  background-size: cover;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  margin: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.dj-slide img {
+  max-width: 95%;
+  height: auto;
+}
+
+.dj-slide-txt {
+  font-size: medium;
+}
+
+.dj-slide-card {
+  margin: auto;
+}
+
+.dj-slide {
+  width: calc(100% - 100px);    /*  added, full width - margin  */
+  flex-shrink: 0;               /*  added, so it won't shrink  */
+  margin: 20px 50px;                 /*  added, instead of padding on parent  */
+  
+  display: flex;                /*  added  */
+  align-items: center;          /*  added  */
+  justify-content: center;      /*  added  */
+  
+  animation: slide-it 20s infinite;
+}
+
+@keyframes slide-it {
+  0%    { transform: translateX(0); }
+  25%   { transform: translateX( calc(-100% - 100px) ); }
+  50%   { transform: translateX( calc(-200% - 200px) ); }
+  100%  { transform: translateX( calc(-300% - 300px) ); }
+}
