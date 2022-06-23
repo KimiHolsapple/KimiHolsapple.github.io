@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<script src="https://d3js.org/d3.v3.min.js"></script>
+<style type="text/css">
+
+
+/* On mouse hover, lighten state color */
+path:hover {
+	fill-opacity: .7;
+}
+
+/* Style for Custom Tooltip */
+div.tooltip {   
+ 	position: absolute;           
+	text-align: center;           
+	width: 60px;                  
+	height: 28px;                 
+	padding: 2px;             
+	font: 12px sans-serif;        
+	background: white;   
+	border: 0px;      
+	border-radius: 8px;           
+	pointer-events: none;         
+}
+        
+/* Legend Font Style */
+body {
+	font: 11px sans-serif;
+}
+
+
+</style>
+</head>
+<body>
+	<h1 style="text-align: center;"> US States and Cities Retirement Vis</h1>
+<img src="legend_2D.png" width="200"></img> 
+<div style="text-align: right;"><img src="size_legend.png" width="90"></img></div>
+<canvas id="states"> </canvas>
+<script type="text/javascript", src="us_state.js"></script>
+
+</body>
+</html>
