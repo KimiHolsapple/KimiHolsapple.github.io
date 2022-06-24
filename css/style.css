@@ -101,22 +101,13 @@ body, html {
 /* HOME SCREEN PROFILE PICTURE SCROLL SMOOTH */
 .bg-image {
   /* Full height */
-  height: 100%;
+  height: 500px; 
+  width: 100%;
+  z-index: 1;
+  
+  position: relative;
 
-  /* Center and scale the image nicely */
-  background-position: right;
-  background-repeat: no-repeat;
-  background-size: 40%;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  margin-right: 20px;
-  margin-left: 100px;
-}
-
-.bg-image-full {
-  /* Full height */
-  height: 60%;
-
+  
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
@@ -124,13 +115,26 @@ body, html {
 }
 
 /* Images used */
-.profile { background-image: url("https://KimiHolsapple.github.io/photos/IMG_7786.PNG"); }
-.bg-white { background-image: url("https://KimiHolsapple.github.io/photos/Screen%20Shot%202020-11-03%20at%202.17.25%20PM.png");}
-.bg-la { background-image: url("https://KimiHolsapple.github.io/photos/los angeles.jpg");}
-.bg-china { background-image: url("https://KimiHolsapple.github.io/photos/china sunset.jpg");}
-.bg-sf { background-image: url("https://KimiHolsapple.github.io/photos/golden-gate-bridge-2080228_1920.jpg");}
-.bg-map { background-image: url("");}
-.bg-work { background-image: url("photos/startup.jpg");}
+.bg-la { background-image: url("/photos/los\ angeles.jpg");}
+.bg-china { background-image: url("/photos/china\ sunset.jpg");}
+.bg-sf { background-image: url("/photos/golden-gate-bridge-2080228_1920.jpg");}
+.bg-work { background-image: url("/photos/startup.jpg");}
+
+.profile_text {
+
+  background-color: rgba(255, 255, 255, 0.788); /* Black w/opacity/see-through */
+  padding: 10%;
+  
+  border-radius: 10px;
+  text-align: center;
+  position: fixed;
+  display: block;
+
+  flex-direction: column;
+  flex-shrink: 0.3;
+  z-index: 20;
+
+}
 
 .name-degree-background {
   padding: 10%;
@@ -226,21 +230,7 @@ body, html {
   border-radius: 10px;
 }
 
-.profile_text {
-    background-color: rgb(f,f,f); /* Fallback color */
 
-    color: #222;
-    font-size: inherit;
-    position: absolute;
-    text-align: left;
-    top: 20%;
-    left: 0%;
-    right: 20%;
-    bottom: 100%;
-
-    z-index: 2;
-
-}
 
 .avatar {
   vertical-align: middle;
