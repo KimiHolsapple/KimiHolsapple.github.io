@@ -120,6 +120,17 @@ body, html {
 .bg-sf { background-image: url("/photos/golden-gate-bridge-2080228_1920.jpg");}
 .bg-work { background-image: url("/photos/startup.jpg");}
 
+.contact_background {
+  padding: 10%;
+  margin: 5%;
+  border-radius: 10px;
+  vertical-align: middle;
+  width: inherit;
+  background-color: rgba(255, 255, 255, 0.788);
+  position: fixed;
+  z-index: 2;
+}
+
 .profile_text {
 
   background-color: rgba(255, 255, 255, 0.788); /* Black w/opacity/see-through */
@@ -391,6 +402,16 @@ body, html {
   border-radius: 10px;
   width: 95%;
   background-color: rgb(48, 48, 48);
+  color: rgb(226, 222, 227);
+  text-align: center;
+}
+
+.credits {
+  padding: 5%;
+  margin: 2%;
+  border-radius: 10px;
+  width: 95%;
+  background-color: inherit;
   color: rgb(226, 222, 227);
   text-align: center;
 }
