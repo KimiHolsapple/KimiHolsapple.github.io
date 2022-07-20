@@ -76,28 +76,39 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
           </div>
 
           <div class="column50" style="font-size: 2.5vmax;"> <p><div class="tooltip" >
-            <i class="fa fa-fw fa-linkedin w3-hover-opacity "></i> 
+            <a href="https://linkedin.com/in/kimi-holsapple" target="_blank" ><i class="fa fa-fw fa-linkedin w3-hover-opacity "></i> </a>
             <span class="tooltiptext"><a href="https://linkedin.com/in/kimi-holsapple" target="_blank" > LinkedIn </a></span>
             </div>
           </p>
           </div>
 
           <div class="column50" style="font-size: 2.5vmax;"> <p><div class="tooltip" >
-            <i class="fa fa-fw fa-github w3-hover-opacity "></i> 
+            <a href="https://github.com/KimiHolsapple" target="_blank"><i class="fa fa-fw fa-github w3-hover-opacity "></i> </a>
             <span class="tooltiptext"><a href="https://github.com/KimiHolsapple" target="_blank"> GitHub </a></span>
             </div>
           </p>
           </div>
+
+          <script>
+            function copyTextClick() {
+              /* Copy the text inside the text field */
+              navigator.clipboard.writeText("kimiholsapple@gmail.com");
+
+              /* Alert the copied text */
+              alert("Copied the text: kimiholsapple@gmail.com" );
+            }
+          </script>
     
           <div class="column50" style="font-size: 2.5vmax;"> <p><div class="tooltip">
-              <i class="fa fa-fw fa-envelope w3-hover-opacity"></i>
+              <i onclick="copyTextClick()" class="fa fa-fw fa-envelope w3-hover-opacity"></i>
               <span class="tooltiptext">kimiholsapple@gmail.com</span>
             </div> 
           </p>
           </div>
     
-          <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="kimi-holsapple" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/kimi-holsapple?trk=profile-badge"></a></div>
-       
+          <!-- <div class="row50" style="flex-wrap:wrap;">
+            <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="small" data-theme="dark" data-type="VERTICAL" data-vanity="kimi-holsapple" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/kimi-holsapple?trk=profile-badge"></a></div>
+          </div> -->
         </div>
         
         
@@ -160,6 +171,8 @@ function w3_close() {
   document.getElementById("mySidebar").style.display = "none";
   document.getElementById("myOverlay").style.display = "none";
 }
+
+
 </script>
 
 </body>
