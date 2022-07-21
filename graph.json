@@ -1,0 +1,60 @@
+{"nodes":
+    [   
+        { 
+        "name": "",
+        "img":"",
+        "size": 5 },
+        { 
+            "name": "Python",
+            "img":"https://kimiholsapple.github.io/photos/tech-stack-icons/icon1.png",
+            "size": 100 },
+        { 
+            "name": "D3",
+            "img":"https://kimiholsapple.github.io/photos/tech-stack-icons/icon2.png",
+            "size": 100 },
+        { 
+            "name": "keras/TensorFlow",
+            "img":"https://kimiholsapple.github.io/photos/tech-stack-icons/icon3.png",
+            "size": 100 },
+        { 
+            "name": "SQL",
+            "img":"https://kimiholsapple.github.io/photos/tech-stack-icons/icon4.png",
+            "size": 100 },
+        { 
+            "name": "PostgreSQL",
+            "img":"https://kimiholsapple.github.io/photos/tech-stack-icons/icon5.png",
+            "size": 100 },
+        { 
+            "name": "C",
+            "img":"https://kimiholsapple.github.io/photos/tech-stack-icons/icon6.png",
+            "size": 100 },
+        { 
+            "name": "PostgreSQL",
+            "img":"https://kimiholsapple.github.io/photos/tech-stack-icons/icon7.png",
+            "size": 100 },
+        { 
+            "name": "Java",
+            "img":"https://kimiholsapple.github.io/photos/tech-stack-icons/icon8.jpg",
+            "size": 100 },
+        { 
+            "name": "JavaScript",
+            "img":"https://kimiholsapple.github.io/photos/tech-stack-icons/icon9.png",
+            "size": 100 },
+        { 
+            "name": "Pearl",
+            "img":"https://kimiholsapple.github.io/photos/tech-stack-icons/icon10.jpg",
+            "size": 100 },
+        { 
+            "name": "AWS",
+            "img":"https://kimiholsapple.github.io/photos/tech-stack-icons/icon11.png",
+            "size": 100 },
+        { 
+            "name": "React",
+            "img":"https://kimiholsapple.github.io/photos/tech-stack-icons/icon12.jpg",
+            "size": 100 },
+        { 
+            "name": "Flutter/Dart",
+            "img":"https://kimiholsapple.github.io/photos/tech-stack-icons/icon13.png",
+            "size": 100 }
+    ]
+}
